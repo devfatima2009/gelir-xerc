@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+.expense-section {
+    background-color: rgb(231, 231, 231);
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.expense-section .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.expense-section .balance-box {
+    margin-bottom: 10px;
+}
+
+.expense-section .balance-box h4 {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+} 
+
+.expense-section .balance-box #balance {
+    font-size: 20px;
+} 
+
+.expense-section .expense-box {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    border: 1px solid rgb(189, 187, 187);
+}
+
+.expense-section .expense-box .expense-box-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.expense-section .expense-box-item strong {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.expense-section .expense-box-item.profit span {
+    color: rgb(18, 207, 18);
+}
+
+.expense-section .expense-box-item.loss span {
+    color: rgb(219, 33, 8);
+}
+
+.expense-section .operation-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.expense-section .operation-list .operation-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.expense-section .operation-item .remove-btn {
+    display: none;
+    position: absolute;
+    left: -13px;
+    border: none;
+    background-color: rgb(240, 11, 11);
+    padding: 2px;
+    height: 100%;
+    top: -1px;
+}
+
+.expense-section .operation-item:hover .remove-btn {
+    display: inline;
+}
+
+.expense-section .operation-item.profit-box {
+    border-right: 3px solid rgb(18, 207, 18);
+}
+
+.expense-section .operation-item.loss-box {
+    border-right: 3px solid rgb(219, 33, 8);
+}
+
+.expense-section .operation-form .operation-form-item {
+     display: flex;
+     flex-direction: column;
+     margin: 10px 0;
+}
+
+.expense-section .operation-form .operation-form-item input {
+    border: 1px solid rgb(149, 148, 148);
+    background-color: #fff;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.expense-section .operation-form button {
+    background-color: rgb(144, 5, 144);
+    border: none;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    padding: 4px;
+}
